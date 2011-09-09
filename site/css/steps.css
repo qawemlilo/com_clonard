@@ -1,0 +1,56 @@
+#form-cont .steps{margin:0px 0px 5px 0px}
+
+#form-cont #total {
+  width:120px; 
+  margin-top:5px; 
+  margin-bottom: -15px; 
+  height:20px; 
+  border: 1px solid #BBBBBB; 
+  padding: 10px; 
+  float:right; 
+  margin-right:10px; -moz-border-radius: 4px 4px 4px 4px; 
+  font-family:'Helvetica Neue','Helvetica','Arial',sans-serif;font-size: 1.3em;font-weight: normal;
+}
+
+#form-cont #total #amount {
+  margin-left: 5px;
+}
+
+#form-cont .steps ul{margin:0px; list-style:none;}
+#form-cont .clear {clear:both;}
+#form-cont .steps ul li{
+  margin:0;
+  float:left;
+  font-size:1.2em;
+  width:197px;
+  height:30px;
+  margin-bottom:0;
+  color:#88888f;
+  padding:10px 20px 10px 5px;
+  background: -10px 0px url(../images/step-arrow-inactive.gif) no-repeat;
+  list-style:none;
+}
+
+#form-cont .steps ul li.active{
+  padding-left:15px;
+  padding-right:10px;
+  background: -10px 0px url(../images/step-arrow-active.gif) no-repeat;
+  color:white
+}
+
+#form-cont .steps ul li.first{
+  padding-left: 5px;
+  padding-right:20px;
+}
+
+#form-cont .steps ul li.last{
+  background:-10px 0px url(../images/step-arrow-inactive-last.gif) no-repeat
+}
+
+#form-cont .steps ul li.active.prior{
+  background:-10px 0px url(../images/step-arrow-active-prior.gif) no-repeat
+}
+
+#form-cont .steps ul li.active.last{
+  background:-10px 0px url(../images/step-arrow-active-last.gif) no-repeat
+}

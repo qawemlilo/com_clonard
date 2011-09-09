@@ -1,0 +1,242 @@
+#contactForm {
+ margin: 0px 10px 10px 10px;
+ background: transparent;
+ overflow: hidden;
+}
+
+#contactForm  fieldset {
+	border: 1px solid #BBBBBB;
+	padding-top: 1.5em; 
+	color: rgb(0, 0, 0);
+	-moz-border-radius: 4px 4px 4px 4px; 
+}
+
+#contactForm  fieldset legend {
+    text-transform: capitalize; 
+	font-weight: bold; 
+	padding: 0.5em 1em; 
+	border: 1px solid #BBBBBB;
+	-moz-border-radius: 4px 4px 4px 4px; 
+	font-size: 1.2em;
+}
+
+
+#contactForm label {
+    float: left;
+    line-height: 33px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 0;
+    text-align: right;
+    width: 200px;
+	font-size: 14px;
+	color: #525253;
+}
+
+#contactForm p {
+ margin-top: 15px; 
+}
+
+#contactForm h2 {
+ margin-left: 90px; 
+ margin-bottom: 5px; 
+}
+
+#contactForm input.txt {
+    width: 300px;
+	border: 1px solid #BBBBBB;
+    padding: 8px;
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+}
+
+#datepicker2, #datepicker {
+    width: 250px;
+	border: 1px solid #BBBBBB;
+	margin-left: 150px;
+    padding: 5px;
+}
+
+#contactForm select {
+    border: 1px solid #BBBBBB;
+    padding: 4px 8px 4px 8px;
+    -moz-border-radius: 4px 4px 4px 4px;
+}
+
+#contactForm textarea {
+    padding: 7px;
+	width: 450px;
+	border: 1px solid #BBBBBB;
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+
+
+
+#contactForm span, span.error {
+    color: red;
+}
+
+#contactForm span.comment-error {
+    vertical-align: top;
+}
+
+#contactForm span.error {
+    display:none;
+}
+
+#contactForm #responseP {
+	font-size: 14pt;
+	text-align: center;
+    margin:2px 2px 0px 2px;
+    padding: 8px;
+    background-position:left center;
+    display: none;
+}
+
+#contactForm .fail {
+        color: red;
+        border: 1px solid red;
+        background: yellow url(http://www.rflab.co.za/images/error.png) no-repeat;
+        
+}
+
+#contactForm .success {
+        color: green;
+        border: 1px solid green;
+        background: white url(http://www.rflab.co.za/images/checked.png) no-repeat;
+}
+/* BUTTONS */
+
+#contactForm button#submit {
+    float: right;
+    margin-right: 10px;
+	font-size:1.4em;
+	color: #fff;
+	height: auto;
+}
+
+#contactForm button.white {
+	color: #000;
+	float: left;
+	margin-left: 10px;
+}    
+
+/* button 
+---------------------------------------------- */
+#contactForm  .button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+#contactForm .button:hover {
+	text-decoration: none;
+}
+#contactForm  .button:active {
+	position: relative;
+	top: 1px;
+}
+
+#contactForm  .bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+#contactForm  .medium {
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+#contactForm  .small {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+
+/* color styles 
+---------------------------------------------- */
+
+/* black */
+#contactForm  .blue {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+
+#contactForm  .blue:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+
+#contactForm  .blue:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+
+/* white */
+#contactForm .white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+#contactForm .white:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+#contactForm .white:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
+
+/* orange */
+
+#contactForm  .orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+
+#contactForm  .orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+#contactForm  .orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}

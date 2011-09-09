@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="component" version="1.5.0" method="upgrade">
-	<name>Map Application</name>
+	<name>Clonard</name>
 	<creationDate>2011-09-05</creationDate>
 	<author>Qawelesizwe Mlilo</author>
 	<authorEmail>qawemlilo@gmail.com</authorEmail>
 	<authorUrl>http://qawemlilo.rflab.co.za/</authorUrl>
-	<copyright>(C)2011 - Raging Flame</copyright>
-	<license>(C)2011 - Raging Flame</license>
-	<version>0.5.0</version>
-
-	<description>Map Application</description>
-
-	<files folder="site">
-		<filename>admin.map.html.php</filename>
-		<filename>map.php</filename>
-		<filename>index.html</filename>
-		<filename>admin.map.php</filename>
-		<filename>map.html.php</filename>
-		<filename>toolbar.map.html.php</filename>
-		<filename>toolbar.map.php</filename>
-		<folder>images</folder>
-		<folder>tables</folder>
-		<folder>scripts</folder>
-		<folder>app</folder>
-	</files>
+	<copyright>(c)2011 - Raging Flame</copyright>
+	<license>(c)2011 - Raging Flame</license>
 	
+	<version>0.0.8</version>
+
+	<description>Clonard Application form</description>
+
 	<installfile>install.helloworld.php</installfile>
-	
+
 	<uninstallfile>uninstall.helloworld.php</uninstallfile>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files folder="site">
+		<filename>clonard.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
 
 	<administration>
-		<!-- Administration Menu Section -->
-		<menu>Hello World!</menu>
+		<menu>Clonard Applications</menu>
 
-		<!-- Administration Main File Copy Section -->
 		<files folder="admin">
-			<filename>admin.map.html.php</filename>
+			<filename>clonard.php</filename>
 			<filename>index.html</filename>
-			<filename>admin.map.php</filename>
-			<filename>toolbar.map.html.php</filename>
-			<filename>toolbar.map.php</filename>
-		    <folder>scripts</folder>
-		    <folder>app</folder>
+			<folder>sql</folder>
 		</files>  
 	</administration>
 </install>
